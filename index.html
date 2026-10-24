@@ -1,0 +1,1116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Discover The Copy Voice Blueprint, a practical AI copywriting training document with 12 copy voices, a five-step process, a reusable master prompt, and five test prompts. Get it for $1.">
+  <title>The Copy Voice Blueprint — Find Your AI Copy Style for $1</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080808;
+      --surface: #111111;
+      --surface-light: #191919;
+      --red: #ed202b;
+      --red-dark: #8f1018;
+      --white: #ffffff;
+      --muted: #b8b8b8;
+      --border: rgba(255,255,255,.11);
+      --max-width: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% -15%, rgba(153, 0, 15, .24), transparent 50%),
+        var(--bg);
+      color: var(--white);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+
+    img { max-width: 100%; height: auto; }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .announcement {
+      padding: 10px 16px;
+      text-align: center;
+      background: linear-gradient(90deg, #650910, #c51622, #650910);
+      color: white;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 76px 0 88px;
+      border-bottom: 1px solid var(--border);
+      background:
+        radial-gradient(ellipse at 50% 15%, rgba(226, 16, 34, .17), transparent 53%),
+        linear-gradient(180deg, rgba(255,255,255,.025), transparent 70%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 20px;
+      color: #ff656d;
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 24px;
+      height: 2px;
+      background: var(--red);
+      content: "";
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 23px;
+      font-size: clamp(2.5rem, 5.4vw, 4.65rem);
+      font-weight: 950;
+      letter-spacing: -.055em;
+      line-height: 1.06;
+    }
+
+    .accent { color: #ff3945; }
+
+    .hero-copy {
+      max-width: 630px;
+      color: #d0d0d0;
+      font-size: 1.1rem;
+    }
+
+    .hero-copy strong { color: white; }
+
+    .hero-promise {
+      margin: 22px 0;
+      padding-left: 17px;
+      border-left: 3px solid var(--red);
+      color: white;
+      font-size: 1.02rem;
+      font-weight: 750;
+    }
+
+    .price-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin: 25px 0 17px;
+    }
+
+    .price {
+      color: white;
+      font-size: 2.8rem;
+      font-weight: 950;
+      letter-spacing: -.06em;
+      line-height: 1;
+    }
+
+    .price span {
+      color: #ff414b;
+      font-size: 1.15rem;
+      letter-spacing: 0;
+      vertical-align: top;
+    }
+
+    .price-note {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .purchase-link {
+      display: inline-block;
+      max-width: 100%;
+      margin: 8px 0;
+      border-radius: 5px;
+      transition: transform .2s ease, filter .2s ease;
+    }
+
+    .purchase-link:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+
+    .purchase-link:focus-visible,
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #ff616a;
+      outline-offset: 5px;
+    }
+
+    .purchase-link img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .secure-note {
+      margin: 9px 0 0;
+      color: #a5a5a5;
+      font-size: .78rem;
+    }
+
+    .mockup-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+      perspective: 1000px;
+    }
+
+    .book {
+      position: relative;
+      width: min(100%, 365px);
+      min-height: 460px;
+      padding: 36px 30px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.22);
+      border-left: 7px solid #700710;
+      border-radius: 5px 13px 13px 5px;
+      background:
+        linear-gradient(120deg, rgba(255,255,255,.09), transparent 22%),
+        radial-gradient(ellipse at 50% 70%, rgba(237,32,43,.25), transparent 52%),
+        linear-gradient(145deg, #1d1d1d, #070707 65%, #30080b);
+      box-shadow:
+        0 30px 70px rgba(0,0,0,.65),
+        0 0 55px rgba(237,32,43,.13),
+        inset 0 0 35px rgba(255,255,255,.025);
+      transform: rotateY(-7deg) rotateX(2deg);
+    }
+
+    .book::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #8f1018, #ff555e, #7c0a11);
+      content: "";
+    }
+
+    .book::after {
+      position: absolute;
+      right: -50px;
+      bottom: 75px;
+      width: 260px;
+      height: 260px;
+      border: 1px solid rgba(255,49,63,.28);
+      border-radius: 50%;
+      box-shadow: 0 0 0 22px rgba(255,49,63,.035),
+                  0 0 0 48px rgba(255,49,63,.025);
+      content: "";
+    }
+
+    .book-kicker {
+      position: relative;
+      z-index: 1;
+      color: #ff656d;
+      font-size: .7rem;
+      font-weight: 850;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .book h2 {
+      position: relative;
+      z-index: 1;
+      margin: 44px 0 17px;
+      font-size: clamp(2.3rem, 4vw, 3.25rem);
+      font-weight: 950;
+      letter-spacing: -.065em;
+      line-height: .98;
+      text-transform: uppercase;
+    }
+
+    .book h2 span {
+      display: block;
+      color: #ff343f;
+    }
+
+    .book-rule {
+      position: relative;
+      z-index: 1;
+      width: 58px;
+      height: 4px;
+      margin: 24px 0;
+      background: var(--red);
+    }
+
+    .book-description {
+      position: relative;
+      z-index: 1;
+      max-width: 245px;
+      color: #d2d2d2;
+      font-size: .94rem;
+    }
+
+    .book-bottom {
+      position: absolute;
+      z-index: 1;
+      right: 30px;
+      bottom: 28px;
+      left: 30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,.19);
+      color: #aaa;
+      font-size: .68rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    section { padding: 82px 0; }
+
+    .section-alt {
+      border-top: 1px solid rgba(255,255,255,.045);
+      border-bottom: 1px solid rgba(255,255,255,.045);
+      background: linear-gradient(180deg, #0e0e0e, #111 50%, #0b0b0b);
+    }
+
+    .section-heading {
+      max-width: 790px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 17px;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      font-weight: 900;
+      letter-spacing: -.045em;
+      line-height: 1.13;
+    }
+
+    .section-heading p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .problem-card, .feature-card, .audience-card {
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: linear-gradient(145deg, #181818, #101010);
+    }
+
+    .icon {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      margin-bottom: 17px;
+      place-items: center;
+      border: 1px solid rgba(237,32,43,.45);
+      border-radius: 9px;
+      background: rgba(237,32,43,.1);
+      color: #ff525c;
+      font-size: 1.25rem;
+      font-weight: 900;
+    }
+
+    .problem-card h3, .feature-card h3, .audience-card h3 {
+      margin-bottom: 9px;
+      font-size: 1.13rem;
+      font-weight: 850;
+    }
+
+    .problem-card p, .feature-card p, .audience-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .solution-panel {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      align-items: center;
+      gap: 45px;
+      padding: clamp(26px, 5vw, 54px);
+      border: 1px solid rgba(237,32,43,.3);
+      border-radius: 14px;
+      background:
+        radial-gradient(ellipse at 0 50%, rgba(237,32,43,.12), transparent 60%),
+        #101010;
+      box-shadow: 0 18px 60px rgba(0,0,0,.2);
+    }
+
+    .solution-label {
+      color: #ff5963;
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .solution-panel h2 {
+      margin: 12px 0;
+      font-size: clamp(2rem, 3.7vw, 3.1rem);
+      font-weight: 950;
+      letter-spacing: -.05em;
+      line-height: 1.1;
+    }
+
+    .solution-panel p { color: var(--muted); }
+
+    .check-list {
+      display: grid;
+      gap: 13px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 31px;
+      color: #e4e4e4;
+    }
+
+    .check-list li::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #ff404b;
+      font-size: 1.1rem;
+      font-weight: 900;
+      content: "✓";
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+    }
+
+    .feature-card::after {
+      position: absolute;
+      right: -28px;
+      bottom: -35px;
+      width: 100px;
+      height: 100px;
+      border: 1px solid rgba(237,32,43,.12);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .feature-number {
+      margin-bottom: 14px;
+      color: #ff4a55;
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .13em;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      max-width: 920px;
+      margin: 0 auto;
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      padding: 25px 24px 25px 76px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #111;
+      counter-increment: step;
+    }
+
+    .step::before {
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      display: grid;
+      width: 37px;
+      height: 37px;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fa3440, #8f1018);
+      color: white;
+      font-weight: 900;
+      content: counter(step);
+    }
+
+    .step h3 {
+      margin-bottom: 8px;
+      font-size: 1.04rem;
+    }
+
+    .step p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .step:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .callout {
+      max-width: 780px;
+      margin: 36px auto 0;
+      padding: 20px 24px;
+      border-left: 3px solid var(--red);
+      background: rgba(255,255,255,.035);
+      color: #c8c8c8;
+      font-size: .93rem;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .audience-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .audience-card .check {
+      flex-shrink: 0;
+      color: #ff454f;
+      font-weight: 900;
+    }
+
+    .audience-card p { color: #e2e2e2; }
+
+    .offer-section {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 30%, rgba(237,32,43,.2), transparent 60%),
+        #090909;
+    }
+
+    .offer-box {
+      max-width: 790px;
+      margin: 0 auto;
+      padding: clamp(28px, 6vw, 56px);
+      border: 1px solid rgba(255,66,76,.42);
+      border-radius: 15px;
+      background: linear-gradient(150deg, #1a1a1a, #0d0d0d 65%);
+      box-shadow: 0 25px 90px rgba(0,0,0,.45), 0 0 40px rgba(237,32,43,.08);
+      text-align: center;
+    }
+
+    .offer-box h2 {
+      margin-bottom: 12px;
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
+      font-weight: 950;
+      letter-spacing: -.05em;
+      line-height: 1.1;
+    }
+
+    .offer-box > p {
+      color: #c9c9c9;
+    }
+
+    .offer-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 22px;
+      max-width: 520px;
+      margin: 28px auto;
+      text-align: left;
+    }
+
+    .offer-features div {
+      color: #e5e5e5;
+      font-size: .93rem;
+    }
+
+    .offer-price {
+      margin: 22px 0 5px;
+      color: #ff424d;
+      font-size: clamp(3.5rem, 8vw, 5rem);
+      font-weight: 950;
+      letter-spacing: -.07em;
+      line-height: 1;
+    }
+
+    .offer-price-caption {
+      margin-bottom: 20px;
+      color: #bdbdbd;
+      font-size: .9rem;
+    }
+
+    .faq-list {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .faq-list details {
+      margin-bottom: 12px;
+      padding: 19px 22px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: #111;
+    }
+
+    .faq-list summary {
+      position: relative;
+      padding-right: 25px;
+      cursor: pointer;
+      font-weight: 800;
+      list-style: none;
+    }
+
+    .faq-list summary::-webkit-details-marker { display: none; }
+
+    .faq-list summary::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #ff414c;
+      font-size: 1.3rem;
+      content: "+";
+    }
+
+    .faq-list details[open] summary::after { content: "−"; }
+
+    .faq-list details p {
+      margin: 13px 0 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    footer {
+      padding: 35px 0 24px;
+      border-top: 1px solid var(--border);
+      background: #060606;
+    }
+
+    .disclaimer {
+      max-width: 940px;
+      margin: 0 auto 27px;
+      padding: 19px 22px;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 7px;
+      background: #0c0c0c;
+      color: #a9a9a9;
+      font-size: .78rem;
+      line-height: 1.8;
+    }
+
+    .disclaimer strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #e3e3e3;
+      font-size: .81rem;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: #888;
+      font-size: .79rem;
+    }
+
+    .privacy-link {
+      color: #e8e8e8;
+      text-decoration-color: #a61a24;
+      text-underline-offset: 4px;
+    }
+
+    .privacy-link:hover { color: #ff555f; }
+
+    .footer-brand {
+      color: #bbb;
+      font-weight: 750;
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 25px; }
+      .hero { padding: 55px 0 60px; }
+      .hero-content { text-align: center; }
+      .hero-copy { margin-inline: auto; }
+      .hero-promise { max-width: 600px; margin-inline: auto; }
+      .price-line { justify-content: center; }
+      .mockup-wrap { padding-top: 15px; }
+      .book { transform: none; }
+      .solution-panel { grid-template-columns: 1fr; gap: 20px; }
+      .problem-grid, .feature-grid { grid-template-columns: repeat(2, 1fr); }
+      .audience-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 560px) {
+      .container { width: min(100% - 30px, var(--max-width)); }
+      section { padding: 58px 0; }
+      .hero { padding: 43px 0 48px; }
+      h1 { font-size: clamp(2.35rem, 11vw, 3.4rem); }
+      .hero-copy { font-size: 1rem; }
+      .mockup-wrap { padding-inline: 4px; }
+      .book { min-height: 400px; padding: 30px 25px; }
+      .book h2 { margin-top: 40px; font-size: 2.65rem; }
+      .problem-grid, .feature-grid, .steps, .audience-grid {
+        grid-template-columns: 1fr;
+      }
+      .step:last-child { grid-column: auto; }
+      .problem-card, .feature-card { padding: 23px; }
+      .solution-panel { padding: 25px 22px; }
+      .offer-features { grid-template-columns: 1fr; max-width: 300px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .purchase-link img { width: 100%; max-width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">A practical approach to more personal AI copywriting · Just $1</div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow">Introducing The Copy Voice Blueprint</p>
+        <h1>Your AI Writes Copy. So Why Does It Still Sound Like <span class="accent">Everybody Else?</span></h1>
+        <p class="hero-copy">
+          You ask AI to write an email, an ad, or a sales page. The words come back,
+          but something feels off. It sounds generic. <strong>It doesn't sound like you.</strong>
+        </p>
+        <p class="hero-copy">
+          The Copy Voice Blueprint is a downloadable training document that shows
+          you how to guide your AI writing tool toward a reusable copy style using
+          voice profiles, clear instructions, a master prompt, and test prompts.
+        </p>
+        <p class="hero-promise">
+          Create a more consistent writing style without starting from scratch every time.
+        </p>
+        <div class="price-line">
+          <div class="price"><span>$</span>1</div>
+          <div class="price-note">One simple entry price<br>Downloadable training document</div>
+        </div>
+        <a class="purchase-link"
+           href="https://warriorplus.com/o2/buy/lnc3ny/l9h24m/d3r12r">
+          <img src="https://warriorplus.com/o2/btn/fn120011001/lnc3ny/l9h24m/477946"
+               alt="Buy The Copy Voice Blueprint for $1">
+        </a>
+        <p class="secure-note">Ready to explore a more intentional approach to AI copywriting?</p>
+      </div>
+
+      <div class="mockup-wrap">
+        <div class="book" role="img" aria-label="The Copy Voice Blueprint digital training document cover">
+          <div class="book-kicker">The AI Copywriting Guide</div>
+          <h2>The Copy <span>Voice</span> Blueprint</h2>
+          <div class="book-rule"></div>
+          <p class="book-description">
+            A practical process for guiding AI toward a reusable writing style
+            that reflects your preferences and voice.
+          </p>
+          <div class="book-bottom">12 Voice Profiles · Master Prompt · Test Prompts</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Sound familiar?</p>
+          <h2>AI Can Write the Words. But the <span class="accent">Personality</span> Is Another Story.</h2>
+          <p>
+            AI can be useful for getting words on the page. The challenge is giving
+            those words a recognizable style that fits how you want to communicate.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card">
+            <div class="icon" aria-hidden="true">01</div>
+            <h3>Polished, but Generic</h3>
+            <p>
+              The writing may be grammatically sound, yet still feel like something
+              anyone could have published.
+            </p>
+          </article>
+          <article class="problem-card">
+            <div class="icon" aria-hidden="true">02</div>
+            <h3>Missing Your Personality</h3>
+            <p>
+              Your natural tone, preferred rhythm, and way of making a point can
+              get lost in a broad, one-size-fits-all response.
+            </p>
+          </article>
+          <article class="problem-card">
+            <div class="icon" aria-hidden="true">03</div>
+            <h3>Starting Over Again</h3>
+            <p>
+              Without clear style instructions, you may find yourself repeatedly
+              explaining what you want in every new writing task.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="solution-panel">
+          <div>
+            <p class="solution-label">A more practical approach</p>
+            <h2>Give Your AI a <span class="accent">Style to Work From.</span></h2>
+            <p>
+              The Copy Voice Blueprint brings the process together in one written
+              training resource. Use it to guide your AI through developing a
+              master copywriting style, then test and refine the instructions.
+            </p>
+          </div>
+          <ul class="check-list">
+            <li>Explore 12 distinct copywriting voice profiles.</li>
+            <li>Follow a five-step master-style creation process.</li>
+            <li>Use a reusable master prompt to communicate your preferences.</li>
+            <li>Try five test prompts to evaluate and refine the output.</li>
+            <li>Keep the guidance and prompts organized in one convenient document.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Inside the blueprint</p>
+          <h2>Everything You Need to Follow the <span class="accent">Process.</span></h2>
+          <p>
+            No pile of disconnected tips. The training document brings together
+            the core elements for a more intentional AI writing workflow.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-number">INCLUDED · 01</div>
+            <h3>12 Copy Voice Profiles</h3>
+            <p>
+              Explore different approaches to tone, rhythm, persuasion, and writing
+              style so you can guide the kind of copy you want to create.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">INCLUDED · 02</div>
+            <h3>Five-Step Master-Style Process</h3>
+            <p>
+              Follow a structured process for asking your AI tool to help develop
+              a reusable copy style based on your own voice.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">INCLUDED · 03</div>
+            <h3>Reusable Master Prompt</h3>
+            <p>
+              Use the included prompt to help organize your style instructions
+              and communicate your writing preferences consistently.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">INCLUDED · 04</div>
+            <h3>Five Test Prompts</h3>
+            <p>
+              Evaluate how the style instructions work on different writing tasks,
+              identify what needs adjustment, and refine your approach.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">INCLUDED · 05</div>
+            <h3>A Practical Training Document</h3>
+            <p>
+              Keep the voice profiles, process, and prompts together in one
+              resource you can consult as you work with your AI tool.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">THE OBJECTIVE</div>
+            <h3>A More Consistent Style</h3>
+            <p>
+              Build a set of style instructions you can reuse and adjust, rather
+              than relying on a fresh, vague request every time.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Five simple steps</p>
+          <h2>How to Use The Copy Voice <span class="accent">Blueprint.</span></h2>
+          <p>
+            The document guides you through a written, AI-assisted workflow.
+            You remain in control of the instructions and the final copy.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <h3>Upload the Training Document</h3>
+            <p>
+              Upload The Copy Voice Blueprint to a compatible AI writing tool,
+              such as ChatGPT or Claude, where document use is supported.
+            </p>
+          </article>
+          <article class="step">
+            <h3>Give the AI Its Instructions</h3>
+            <p>
+              Ask the AI to use the training document to help create a master
+              copywriting style based on your own voice.
+            </p>
+          </article>
+          <article class="step">
+            <h3>Explore the 12 Copy Voices</h3>
+            <p>
+              Use the included voice profiles to guide tone, rhythm, persuasion,
+              and the overall writing approach you want.
+            </p>
+          </article>
+          <article class="step">
+            <h3>Use the Master Prompt</h3>
+            <p>
+              Apply the reusable prompt to help communicate and organize your
+              style preferences and writing instructions.
+            </p>
+          </article>
+          <article class="step">
+            <h3>Test and Refine</h3>
+            <p>
+              Try the supplied test prompts, review the output, and adjust your
+              instructions as needed to better match your goals.
+            </p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <strong>Keep expectations realistic:</strong> This is a training document,
+          not an automatic AI model modification. Your results will depend on the
+          tool you use, its capabilities, the quality of your instructions, and
+          the refinements you make along the way.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Who it's for</p>
+          <h2>For People Who Want AI Copy to Feel <span class="accent">Less Generic.</span></h2>
+          <p>
+            If you already use AI to help with written marketing or content,
+            a more deliberate approach to style may be useful.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card"><span class="check" aria-hidden="true">✓</span><p>Affiliate marketers writing promotional copy.</p></div>
+          <div class="audience-card"><span class="check" aria-hidden="true">✓</span><p>Email marketers developing campaigns.</p></div>
+          <div class="audience-card"><span class="check" aria-hidden="true">✓</span><p>Freelance copywriters using AI in their workflow.</p></div>
+          <div class="audience-card"><span class="check" aria-hidden="true">✓</span><p>Online business owners creating sales materials.</p></div>
+          <div class="audience-card"><span class="check" aria-hidden="true">✓</span><p>Content creators who use AI writing tools.</p></div>
+          <div class="audience-card"><span class="check" aria-hidden="true">✓</span><p>Anyone looking for a more personal, consistent writing style.</p></div>
+        </div>
+
+        <div class="callout">
+          You'll need access to a compatible AI writing tool. Compatibility and
+          results can vary between platforms, and you may need to experiment with
+          instructions to find an approach that works for your needs.
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-section" id="get-blueprint">
+      <div class="container">
+        <div class="offer-box">
+          <p class="eyebrow">Start with the essentials</p>
+          <h2>The Copy Voice <span class="accent">Blueprint</span></h2>
+          <p>
+            A practical training document for building a reusable AI copy style,
+            with the voice profiles, instructions, and prompts organized in one place.
+          </p>
+
+          <div class="offer-features">
+            <div>✓ 12 copywriting voice profiles</div>
+            <div>✓ Five-step creation process</div>
+            <div>✓ Reusable master prompt</div>
+            <div>✓ Five test prompts</div>
+            <div>✓ Practical written guidance</div>
+            <div>✓ A process you can refine</div>
+          </div>
+
+          <div class="offer-price">$1</div>
+          <p class="offer-price-caption">The listed purchase price</p>
+
+          <a class="purchase-link"
+             href="https://warriorplus.com/o2/buy/lnc3ny/l9h24m/d3r12r">
+            <img src="https://warriorplus.com/o2/btn/fn120011001/lnc3ny/l9h24m/477946"
+                 alt="Buy The Copy Voice Blueprint for $1">
+          </a>
+
+          <p class="secure-note">
+            Your next step is to review the offer and complete your purchase through WarriorPlus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Your questions answered</p>
+          <h2>Frequently Asked <span class="accent">Questions.</span></h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>What am I buying?</summary>
+            <p>
+              You're buying a downloadable AI copywriting training document
+              containing 12 voice profiles, a five-step process, a reusable
+              master prompt, and five test prompts.
+            </p>
+          </details>
+
+          <details>
+            <summary>How do I use it?</summary>
+            <p>
+              Upload the document to a compatible AI writing tool and instruct
+              the AI to use it to help create a master copywriting style based
+              on your own voice. Then explore the profiles, use the prompt, and
+              test and refine the instructions.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does it work with every AI tool?</summary>
+            <p>
+              Compatibility and results can vary by platform. You'll need an AI
+              tool that can work with the document's content and follow your
+              instructions. Check your chosen platform's capabilities.
+            </p>
+          </details>
+
+          <details>
+            <summary>Will it guarantee better conversions?</summary>
+            <p>
+              No. The document provides a process for guiding and refining
+              AI-generated writing. Results depend on your instructions, offer,
+              audience, execution, and other factors. No specific marketing
+              or conversion outcome is guaranteed.
+            </p>
+          </details>
+
+          <details>
+            <summary>What is a master copywriting style?</summary>
+            <p>
+              It's a reusable set of writing preferences and instructions that
+              helps communicate the tone, rhythm, persuasion approach, and other
+              stylistic choices you want your AI to follow.
+            </p>
+          </details>
+
+          <details>
+            <summary>How much does it cost?</summary>
+            <p>
+              The listed purchase price is $1. Use the purchase button on this
+              page to visit the supplied WarriorPlus checkout.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="disclaimer">
+        <strong>WarriorPlus Disclaimer</strong>
+        WarriorPlus is used to help manage the sale of products on this site.
+        While WarriorPlus helps facilitate the sale, all payments are made
+        directly to the product vendor and NOT WarriorPlus. Thus, all product
+        questions, support inquiries and/or refund requests must be sent to the
+        vendor. WarriorPlus's role should not be construed as an endorsement,
+        approval or review of these products or any claim, statement or opinion
+        used in the marketing of these products.
+      </div>
+
+      <div class="disclaimer">
+        <strong>Results Disclaimer</strong>
+        Individual results from using AI writing tools may vary. This product
+        provides written guidance and prompts, not guaranteed outcomes. No
+        specific marketing, sales, or conversion result is promised.
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-brand">The Copy Voice Blueprint</div>
+        <div>© <span id="copyright-year">2026</span> All rights reserved.</div>
+        <a class="privacy-link"
+           href="https://llpgpro.com/ygr9c7dr/"
+           target="_blank"
+           rel="noopener noreferrer">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
